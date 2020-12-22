@@ -24,22 +24,71 @@ class LoginForm extends StatelessWidget {
             ),
           ),
           SizedBox(
-            width: 350.0,
+            width: 375.0,
+            height: 3.0,
             child: Divider(
               color: Colors.white60,
               thickness: 2.0,
             ),
           ),
           SizedBox(
-            width: 300.0,
+            width: 350.0,
+            height: 10.0,
             child: Divider(
               color: Colors.white60,
               thickness: 2.0,
             ),
           ),
           Card(
-            color: Colors.white54,
-          )
+            margin: EdgeInsets.only(top: 25.0, bottom: 10.0),
+            color: Color.fromRGBO(255, 176, 45, 0.7),
+            child: ListTile(
+              title: Text(
+                'Login:',
+                style: TextStyle(
+                  fontFamily: 'Josefin Slab',
+                  fontSize: 24.0,
+                  fontWeight: FontWeight.w600,
+                )
+              ),
+              leading: Icon(
+                Icons.eco
+              ),
+              trailing: FlatButton(
+                child: Icon(
+                  Icons.fast_forward_outlined
+                ),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/home');
+                },
+              ),
+            )
+          ),
+          Card(
+            margin: EdgeInsets.only(top: 5.0, bottom: 10.0),
+            color: Color.fromRGBO(255, 176, 45, 0.7),
+            child: ListTile(
+              title: Text(
+                'Signup:',
+                style: TextStyle(
+                  fontFamily: 'Josefin Slab',
+                  fontSize: 24.0,
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
+              leading: Icon(
+                Icons.local_cafe
+              ),
+              trailing: FlatButton(
+                child: Icon(
+                  Icons.fast_forward_outlined
+                ),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/home');
+                },
+              ),
+            ),
+          ),
         ],
       ),
     );
