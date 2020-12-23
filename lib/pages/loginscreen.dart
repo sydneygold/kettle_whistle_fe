@@ -12,8 +12,11 @@ class LoginScreen extends StatelessWidget {
           style: TextStyle(
             fontFamily: 'Dancing Script',
             fontWeight: FontWeight.w500,
-            fontSize: 35,
+            fontSize: 40,
           )
+        ),
+        leading: Icon(
+          Icons.eco
         ),
       ),
       body: Container(

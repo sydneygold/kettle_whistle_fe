@@ -40,7 +40,7 @@ class LoginForm extends StatelessWidget {
             ),
           ),
           Card(
-            margin: EdgeInsets.only(top: 25.0, bottom: 10.0),
+            margin: EdgeInsets.only(top: 55.0, bottom: 10.0),
             color: Color.fromRGBO(255, 176, 45, 0.7),
             child: ListTile(
               title: Text(
@@ -59,7 +59,7 @@ class LoginForm extends StatelessWidget {
                   Icons.fast_forward_outlined
                 ),
                 onPressed: () {
-                  Navigator.pushNamed(context, '/home');
+                  Navigator.pushNamed(context, '/nav');
                 },
               ),
             )
@@ -84,7 +84,7 @@ class LoginForm extends StatelessWidget {
                   Icons.fast_forward_outlined
                 ),
                 onPressed: () {
-                  Navigator.pushNamed(context, '/home');
+                  Navigator.pushNamed(context, '/nav');
                 },
               ),
             ),

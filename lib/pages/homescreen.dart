@@ -1,22 +1,57 @@
 import 'package:flutter/material.dart';
+import 'widgets/choicescontainer.dart';
 
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends StatefulWidget {
+  HomeScreen({Key key}) : super(key: key);
+
+  @override
+  _HomeScreenState createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Home"),
+        backgroundColor: Colors.blueGrey[900],
+        title: Text(
+          'Kettle Whistle',
+          style: TextStyle(
+            fontFamily: 'Dancing Script',
+            fontSize: 40.0,
+          )
+        ),
+        leading: Icon(
+          Icons.eco
+        ),
       ),
       body: Center(
-        child: ElevatedButton(
-          onPressed: () {
-            // Navigate back to the first screen by popping the current route
-            // off the stack.
-            Navigator.pop(context);
-          },
-          child: Text('Go back!'),
+        child: Column(
+          children: [
+            Container(
+              width: double.infinity,
+              height: 250.0,
+              decoration: BoxDecoration(
+                color: Colors.grey[700],
+                image: DecorationImage(
+                  image: AssetImage('images/concrete.png'),
+                  fit: BoxFit.cover
+                )
+              ),
+            ),
+            ChoicesContainer(),
+          ],
         ),
       ),
     );
   }
 }
+
+
+// child: ElevatedButton(
+//           onPressed: () {
+//             Navigator.pop(context);
+//           },
+//           child: Text('Go back!'),
+//         ),
