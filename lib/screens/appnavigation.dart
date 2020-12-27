@@ -13,23 +13,23 @@ class AppNav extends StatefulWidget {
 
 class _AppNavState extends State<AppNav> {
 
-  int _selectedIndex = 0;
+  int selectedIndex = 0;
 
   void _onItemTapped(int index) {
     setState(() {
-      _selectedIndex = index;
+      selectedIndex = index;
     });
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: _myPages[_selectedIndex],
+      body: _myPages[selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
         backgroundColor: Colors.blueGrey[900],
         iconSize: 30.0,
-        currentIndex: _selectedIndex,
+        currentIndex: selectedIndex,
         onTap: _onItemTapped,
         items: [
           BottomNavigationBarItem(

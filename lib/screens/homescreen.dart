@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'widgets/choicescontainer.dart';
+import '../widgets/choicescontainer.dart';
 
 class HomeScreen extends StatefulWidget {
   HomeScreen({Key key}) : super(key: key);

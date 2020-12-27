@@ -31,14 +31,13 @@ class _ProfileScreenState extends State<ProfileScreen> {
               width: double.infinity,
               height: 200.0,
               decoration: BoxDecoration(
-                border: Border.all(
-                  width: 8.0,
-                  color: Colors.grey
-                )
+                image: DecorationImage(
+                  image: AssetImage('images/woodbackground.jpg'),
+                  fit: BoxFit.cover
+                ),
               ),
               child: CircleAvatar(
-                backgroundColor: Colors.yellow,
-                radius: 20.0,
+                child: ClipOval(child: Image.asset('images/strawberry-kettle.jpg')),
               ),
             ),
             Container(
@@ -46,15 +45,25 @@ class _ProfileScreenState extends State<ProfileScreen> {
               height: 343.0,
               decoration: BoxDecoration(
                 border: Border.all(
-                  width: 8.0,
-                  color: Colors.grey
+                  width: 2.0,
+                  color: Colors.black
                 ),
+                color: Colors.grey[900]
               ),
               child: Column(
                 children: [
                   Container(
                     height: 60.0,
-                    child: Text('Favorites:')
+                    padding: EdgeInsets.all(10.0),
+                    child: Text(
+                      'Favorites:',
+                      style: TextStyle(
+                        fontFamily: 'Josefin Slab',
+                        fontSize: 40.0,
+                        fontWeight: FontWeight.w600,
+                        color: Colors.white
+                      ),
+                    ),
                   ),
                 ],
               )
