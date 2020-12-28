@@ -1,17 +1,11 @@
 import 'package:flutter/material.dart';
 import '../widgets/choicescontainer.dart';
 
-class HomeScreen extends StatefulWidget {
-  HomeScreen({Key key}) : super(key: key);
-
-  @override
-  _HomeScreenState createState() => _HomeScreenState();
-}
-
-class _HomeScreenState extends State<HomeScreen> {
+class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.blueGrey[900],
@@ -47,11 +41,3 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 }
-
-
-// child: ElevatedButton(
-//           onPressed: () {
-//             Navigator.pop(context);
-//           },
-//           child: Text('Go back!'),
-//         ),

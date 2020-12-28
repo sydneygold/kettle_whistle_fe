@@ -3,7 +3,6 @@ import 'package:kettle_whistle_fe/screens/appnavigation.dart';
 import 'package:kettle_whistle_fe/screens/homescreen.dart';
 
 class LoginForm extends StatelessWidget {
-  const LoginForm({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
