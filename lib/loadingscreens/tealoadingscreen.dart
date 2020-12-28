@@ -21,6 +21,7 @@ class _TeaLoadingScreenState extends State<TeaLoadingScreen> {
   void renderTeas() async {
     NetworkHelper networkHelper = NetworkHelper('https://kettle-whistle-be.herokuapp.com/teas');
     var teaData = await networkHelper.getData();
+    
     Navigator.push(context, MaterialPageRoute(builder: (context) => TeaRecipes(teaInfo: teaData,)));
   }
 

@@ -55,6 +55,8 @@ flutter:
     - images/loadingscreen.jpg
     - images/strawberry-kettle.jpg
     - images/woodbackground.jpg
+    - images/newloadingscreen.jpg
+    - images/coffeebackground.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
