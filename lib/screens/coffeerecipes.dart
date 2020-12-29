@@ -11,7 +11,7 @@ import 'package:kettle_whistle_fe/screens/coffees/vietnamese.dart';
 
 class CoffeeRecipes extends StatefulWidget {
   // CoffeeRecipes({Key key}) : super(key: key);
-  CoffeeRecipes({this.coffeeInfo}); 
+  CoffeeRecipes({this.coffeeInfo});
 
   final coffeeInfo;
 
@@ -20,7 +20,6 @@ class CoffeeRecipes extends StatefulWidget {
 }
 
 class _CoffeeRecipesState extends State<CoffeeRecipes> {
-
   dynamic dalgona;
   dynamic tonic;
   dynamic vietnamese;
@@ -37,7 +36,7 @@ class _CoffeeRecipesState extends State<CoffeeRecipes> {
     updateUI(widget.coffeeInfo);
   }
 
-  void updateUI(dynamic coffeeInfo){
+  void updateUI(dynamic coffeeInfo) {
     dalgona = coffeeInfo[0];
     tonic = coffeeInfo[1];
     vietnamese = coffeeInfo[2];
@@ -46,26 +45,21 @@ class _CoffeeRecipesState extends State<CoffeeRecipes> {
     kalita = coffeeInfo[5];
     chemex = coffeeInfo[6];
     siphon = coffeeInfo[7];
-
   }
 
   FlatButton buildCoffeeCard(String name, Widget nav) {
     return FlatButton(
       color: Color.fromRGBO(255, 176, 45, 0.6),
       child: ListTile(
-        leading: Icon(
-          Icons.sports_rugby_outlined,
-          color: Colors.brown[900],
-          size: 30.0
-        ),
+        leading: Icon(Icons.sports_rugby_outlined,
+            color: Colors.brown[900], size: 30.0),
         title: Text(
           '$name',
           textAlign: TextAlign.start,
           style: TextStyle(
-            fontFamily: 'Josefin Slab',
-            fontWeight: FontWeight.w800,
-            fontSize: 25.0
-          ),
+              fontFamily: 'Josefin Slab',
+              fontWeight: FontWeight.w800,
+              fontSize: 25.0),
         ),
       ),
       onPressed: () {
@@ -79,33 +73,29 @@ class _CoffeeRecipesState extends State<CoffeeRecipes> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.blueGrey[900],
-        title: Text(
-          'Coffee Recipes',
-          style: TextStyle(
-            fontFamily: 'Dancing Script',
-            fontSize: 40.0,
-          )
-        ),
+        title: Text('Coffee Recipes',
+            style: TextStyle(
+              fontFamily: 'Dancing Script',
+              fontSize: 40.0,
+            )),
         leading: FlatButton(
-          splashColor: Colors.amberAccent[700],
-          child: Icon(
-            Icons.free_breakfast,
-            color: Colors.orange[50],
-            size: 40.0,
-          ),
-          onPressed: () {
-            Navigator.push(context, MaterialPageRoute(builder: (context) => AppNav()));
-          }
-        ),
+            splashColor: Colors.amberAccent[700],
+            child: Icon(
+              Icons.free_breakfast,
+              color: Colors.orange[50],
+              size: 40.0,
+            ),
+            onPressed: () {
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => AppNav()));
+            }),
       ),
       body: Container(
         constraints: BoxConstraints.expand(),
         decoration: BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage('images/coffeebackground.jpg'),
-            fit: BoxFit.cover
-          )
-        ),
+            image: DecorationImage(
+                image: AssetImage('images/coffeebackground.jpg'),
+                fit: BoxFit.cover)),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -113,64 +103,66 @@ class _CoffeeRecipesState extends State<CoffeeRecipes> {
               height: 550.0,
               width: 400.0,
               decoration: BoxDecoration(
-                color: Colors.black54,
-                borderRadius: BorderRadius.all(Radius.circular(5.0))
-              ),
+                  color: Colors.black54,
+                  borderRadius: BorderRadius.all(Radius.circular(5.0),),),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Container(
-                    child: buildCoffeeCard('dalgona', DalgonaCard(coffeeDeets: widget.coffeeInfo[0]))
+                    child: buildCoffeeCard(
+                      'dalgona',
+                      DalgonaCard(coffeeDeets: widget.coffeeInfo[0]),
+                    ),
                   ),
-                  SizedBox( 
+                  SizedBox(
                     height: 5.0,
                     width: double.infinity,
                   ),
                   Container(
-                    child: buildCoffeeCard('tonic', TonicCard(coffeeDeets: widget.coffeeInfo[1]))
-                  ),
-                  SizedBox( 
+                      child: buildCoffeeCard('tonic',
+                          TonicCard(coffeeDeets: widget.coffeeInfo[1]),),),
+                  SizedBox(
                     height: 5.0,
                     width: double.infinity,
                   ),
                   Container(
-                    child: buildCoffeeCard('vietnamese', VietnameseCard(coffeeDeets: widget.coffeeInfo[2]))
-                  ),
-                  SizedBox( 
+                      child: buildCoffeeCard('vietnamese',
+                          VietnameseCard(coffeeDeets: widget.coffeeInfo[2]))),
+                  SizedBox(
                     height: 5.0,
                     width: double.infinity,
                   ),
                   Container(
-                    child: buildCoffeeCard('frenchpress', FrenchPressCard(coffeeDeets: widget.coffeeInfo[3]))
-                  ),
-                  SizedBox( 
+                      child: buildCoffeeCard('frenchpress',
+                          FrenchPressCard(coffeeDeets: widget.coffeeInfo[3]))),
+                  SizedBox(
                     height: 5.0,
                     width: double.infinity,
                   ),
                   Container(
-                    child: buildCoffeeCard('aeropress', AeroPressCard(coffeeDeets: widget.coffeeInfo[4]))
-                ),
-                  SizedBox( 
+                      child: buildCoffeeCard('aeropress',
+                          AeroPressCard(coffeeDeets: widget.coffeeInfo[4]))),
+                  SizedBox(
                     height: 5.0,
                     width: double.infinity,
                   ),
                   Container(
-                    child: buildCoffeeCard('kalita', KalitaCard(coffeeDeets: widget.coffeeInfo[5]))
-                  ),
-                  SizedBox( 
+                      child: buildCoffeeCard('kalita',
+                          KalitaCard(coffeeDeets: widget.coffeeInfo[5]))),
+                  SizedBox(
                     height: 5.0,
                     width: double.infinity,
                   ),
                   Container(
-                    child: buildCoffeeCard('chemex', ChemexCard(coffeeDeets: widget.coffeeInfo[6]))
-                  ),
-                  SizedBox( 
+                      child: buildCoffeeCard('chemex',
+                          ChemexCard(coffeeDeets: widget.coffeeInfo[6]))),
+                  SizedBox(
                     height: 5.0,
                     width: double.infinity,
                   ),
                   Container(
-                    child: buildCoffeeCard('siphon', SiphonCard(coffeeDeets: widget.coffeeInfo[7]))
-                  ),
+                      child: buildCoffeeCard('siphon',
+                          SiphonCard(coffeeDeets: widget.coffeeInfo[7]))),
                 ],
               ),
             ),
