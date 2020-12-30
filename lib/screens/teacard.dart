@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
 class TeaCard extends StatefulWidget {
-  TeaCard({this.teaInfo}); 
+  TeaCard({this.teaDeets}); 
 
   @override
   _TeaCardState createState() => _TeaCardState();
 
-  final teaInfo;
+  final teaDeets;
 }
 
 class _TeaCardState extends State<TeaCard> {
@@ -15,11 +15,11 @@ class _TeaCardState extends State<TeaCard> {
   void initState() {
     super.initState();
     // print(widget.teaInfo[0]);
-    updateUI(widget.teaInfo);
+    updateUI(widget.teaDeets);
   }
 
-  void updateUI(dynamic teaInfo){
-    print(teaInfo);
+  void updateUI(dynamic teaDeets){
+    print(teaDeets);
   }
   
   @override

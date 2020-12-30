@@ -15,6 +15,28 @@ class TeaRecipes extends StatefulWidget {
 
 class _TeaRecipesState extends State<TeaRecipes> {
 
+  Card makeCards(dynamic teaType, String name,) {
+    return Card(
+      color: Colors.white60,
+      child: Row(children: [
+        FlatButton(
+            onPressed: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => TeaCard(teaDeets: teaType)),
+                ),
+            child: Icon(Icons.eco_outlined,)
+        ),
+        Text(name, 
+          style: TextStyle(
+            fontFamily: 'Josefin Slab',
+            fontSize: 25.0,
+            fontWeight: FontWeight.w700
+          ),
+        ),
+      ]),
+    );
+  }
+
   @override
   void initState() {
     super.initState();
@@ -67,6 +89,14 @@ class _TeaRecipesState extends State<TeaRecipes> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
+                  makeCards(widget.teaInfo[0], 'Black Tea'),
+                  makeCards(widget.teaInfo[1], 'Green Tea'),
+                  makeCards(widget.teaInfo[2], 'Herbal Tea'),
+                  makeCards(widget.teaInfo[3], 'Oolong Tea'),
+                  makeCards(widget.teaInfo[4], 'White Tea'),
+                  makeCards(widget.teaInfo[5], 'Puerh Tea'),
+                  makeCards(widget.teaInfo[6], 'Matcha Tea'),
+                  makeCards(widget.teaInfo[7], 'Chai'),
                 ],
               ),
             ),
