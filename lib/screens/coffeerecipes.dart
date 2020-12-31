@@ -26,7 +26,11 @@ class _CoffeeRecipesState extends State<CoffeeRecipes> {
                   context,
                   MaterialPageRoute(builder: (context) => CoffeeCard(coffeeDeets: coffeeType)),
                 ),
-            child: Icon(Icons.sports_rugby_outlined)
+            child: Icon(
+              Icons.free_breakfast,
+              size: 35.0,
+              color: Colors.brown[900]
+            )
         ),
         Text(name, 
           style: TextStyle(
@@ -52,7 +56,7 @@ class _CoffeeRecipesState extends State<CoffeeRecipes> {
         leading: FlatButton(
             splashColor: Colors.orange[200],
             child: Icon(
-              Icons.free_breakfast,
+              Icons.skip_previous,
               color: Colors.orange[100],
               size: 40.0,
             ),

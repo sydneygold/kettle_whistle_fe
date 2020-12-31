@@ -24,7 +24,11 @@ class _TeaRecipesState extends State<TeaRecipes> {
                   context,
                   MaterialPageRoute(builder: (context) => TeaCard(teaDeets: teaType)),
                 ),
-            child: Icon(Icons.eco_outlined,)
+            child: Icon(
+              Icons.emoji_food_beverage,
+              size: 35.0,
+              color: Colors.teal[800]
+            )
         ),
         Text(name, 
           style: TextStyle(
@@ -59,8 +63,8 @@ class _TeaRecipesState extends State<TeaRecipes> {
         leading: FlatButton(
           splashColor: Colors.lightGreen[300],
           child: Icon(
-            Icons.emoji_food_beverage,
-            color: Colors.lightGreen[300],
+            Icons.skip_previous,
+            color: Colors.cyan[900],
             size: 40.0,
           ),
           onPressed: () {

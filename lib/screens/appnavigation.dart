@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'profilescreen.dart';
+import 'package:kettle_whistle_fe/screens/nerdyinfo.dart';
 import 'homescreen.dart';
 
-List<Widget> _myPages = [HomeScreen(), ProfileScreen()];
+List<Widget> _myPages = [HomeScreen(), NerdyInfo()];
 
 class AppNav extends StatefulWidget {
   AppNav({Key key}) : super(key: key);
@@ -37,7 +37,7 @@ class _AppNavState extends State<AppNav> {
             label: '',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.account_circle_outlined, color: Colors.amber),
+            icon: Icon(Icons.psychology, color: Colors.amber),
             label: ''
           ),
         ],
