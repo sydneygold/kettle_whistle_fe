@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kettle_whistle_fe/loadingscreens/coffeeloadingscreen.dart';
 import 'package:kettle_whistle_fe/loadingscreens/tealoadingscreen.dart';
-import 'package:kettle_whistle_fe/screens/coffeerecipes.dart';
-import 'package:kettle_whistle_fe/screens/nerdyinfo.dart';
 
 class ChoicesContainer extends StatelessWidget {
   const ChoicesContainer({Key key}) : super(key: key);

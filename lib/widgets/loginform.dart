@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:kettle_whistle_fe/screens/appnavigation.dart';
-import 'package:kettle_whistle_fe/screens/homescreen.dart';
 
 class LoginForm extends StatelessWidget {
   const LoginForm({Key key}) : super(key: key);
@@ -86,7 +85,7 @@ class LoginForm extends StatelessWidget {
                   Icons.fast_forward_outlined
                 ),
                 onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => HomeScreen()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => AppNav()));
                 },
               ),
             ),
