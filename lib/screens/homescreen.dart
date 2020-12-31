@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kettle_whistle_fe/screens/loginscreen.dart';
 import '../widgets/choicescontainer.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -22,8 +23,14 @@ class _HomeScreenState extends State<HomeScreen> {
             fontSize: 40.0,
           )
         ),
-        leading: Icon(
-          Icons.eco
+        leading: FlatButton(
+          onPressed: () {
+            Navigator.push(context, MaterialPageRoute(builder: (context) => LoginScreen()));
+          },
+          child: Icon(
+            Icons.logout,
+            color: Colors.white
+          ),
         ),
       ),
       body: Center(
