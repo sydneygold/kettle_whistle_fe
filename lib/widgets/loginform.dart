@@ -168,6 +168,9 @@ class Login extends StatelessWidget {
                   TextField(
                     obscureText: false,
                     decoration: InputDecoration(
+                      labelStyle: TextStyle(
+                        backgroundColor: Colors.white
+                      ),
                       fillColor: Colors.white,
                       filled: true,
                       border: OutlineInputBorder(),
@@ -180,6 +183,9 @@ class Login extends StatelessWidget {
                   TextField(
                     obscureText: true,
                     decoration: InputDecoration(
+                      labelStyle: TextStyle(
+                        backgroundColor: Colors.white
+                      ),
                       fillColor: Colors.white,
                       filled: true,
                       border: OutlineInputBorder(),

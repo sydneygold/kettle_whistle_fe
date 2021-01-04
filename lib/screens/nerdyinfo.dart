@@ -33,7 +33,8 @@ class _NerdyInfoState extends State<NerdyInfo> {
                     fontFamily: 'Josefin Slab',
                     color: Colors.white,
                     decoration: TextDecoration.none,
-                    fontSize: 30.0
+                    fontSize: 30.0,
+                    fontWeight: FontWeight.w700
                   )
                 ),
                 FlatButton(

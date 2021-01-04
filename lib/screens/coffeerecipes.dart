@@ -36,7 +36,7 @@ class _CoffeeRecipesState extends State<CoffeeRecipes> {
           style: TextStyle(
             fontFamily: 'Josefin Slab',
             fontSize: 25.0,
-            fontWeight: FontWeight.w700
+            fontWeight: FontWeight.bold
           ),
         ),
       ]),

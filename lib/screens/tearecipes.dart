@@ -17,7 +17,7 @@ class _TeaRecipesState extends State<TeaRecipes> {
 
   Card makeCards(dynamic teaType, String name,) {
     return Card(
-      color: Colors.white60,
+      color: Colors.white70,
       child: Row(children: [
         FlatButton(
             onPressed: () => Navigator.push(
@@ -34,7 +34,7 @@ class _TeaRecipesState extends State<TeaRecipes> {
           style: TextStyle(
             fontFamily: 'Josefin Slab',
             fontSize: 25.0,
-            fontWeight: FontWeight.w700
+            fontWeight: FontWeight.w900
           ),
         ),
       ]),

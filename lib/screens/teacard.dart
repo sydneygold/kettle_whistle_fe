@@ -86,6 +86,7 @@ class _TeaCardState extends State<TeaCard> {
               height: 290.0,
               width: 400.0,
               child: ListView(
+                padding: EdgeInsets.only(top: 10.0),
                 children: [
                   Container(
                     margin: EdgeInsets.symmetric(horizontal: 15.0, vertical: 15.0),
