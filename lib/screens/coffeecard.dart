@@ -34,7 +34,6 @@ class _CoffeeCardState extends State<CoffeeCard> {
     temperature = coffeeDeets['temperature'];
     timer = coffeeDeets['timer_in_minutes'];
     instructions = coffeeDeets['instructions'];
-    print(coffeeDeets);
   }
   
   @override
@@ -71,9 +70,10 @@ class _CoffeeCardState extends State<CoffeeCard> {
         ),
         child: Column(
           children: [
-            Center(
+            Expanded(
+              flex: 1,
               child: Container(
-                height: 300.0,
+                margin: EdgeInsets.all(5.0),
                 child: Image(
                   image: NetworkImage('$image')
                 ),

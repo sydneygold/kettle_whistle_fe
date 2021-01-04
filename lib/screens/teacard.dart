@@ -34,7 +34,6 @@ class _TeaCardState extends State<TeaCard> {
     temperature = teaDeets['temperature'];
     timer = teaDeets['timer_in_minutes'];
     instructions = teaDeets['instructions'];
-    print(teaDeets);
   }
   
   @override

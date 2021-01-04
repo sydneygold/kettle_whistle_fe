@@ -45,7 +45,6 @@ class _TeaRecipesState extends State<TeaRecipes> {
   void initState() {
     super.initState();
 
-    print(widget.teaInfo);
   }
 
   @override
