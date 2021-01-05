@@ -11,8 +11,8 @@
   <p align="center">
     An app for rocking that at-home barista life! Great for these covid times and pursuing a lifelong passion for coffee and tea. In this app you gain many recipes for coffee and tea for different methods and types. Coming soon! Nerdy knowledge into these beverages from seed to cup. 
     <br />
-     <a href="https://github.com/sydneygold/hey-remember-that-friend-fe"><strong>Frontend Repo»</strong></a>
-     <a href="https://github.com/sydneygold/hey-remember-that-friend-be"><strong>Backend Repo»</strong></a>
+     <a href="https://github.com/sydneygold/kettle_whistle_fe"><strong>Frontend Repo»</strong></a>
+     <a href="https://github.com/sydneygold/kettle-whistle-be"><strong>Backend Repo»</strong></a>
      <a href="https://www.loom.com/share/f976afe141ea46c2b587462899f9a5bf"><strong>Demo»</strong></a>
     <br />
     <br />
